@@ -1,1 +1,87 @@
-/* место для вашего кода */
+.header,
+.footer {
+  padding: 0 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 0 50px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  justify-self: center;
+}
+
+.header__menu {
+  justify-self: start;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: circle;
+  margin: 0;
+  padding: 0;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+  line-height: 135%;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  justify-self: end;
+}
+
+.header__address a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header__address p {
+  margin: 0;
+}
